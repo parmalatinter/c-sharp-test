@@ -11,7 +11,7 @@ namespace UnitTestProject
     {
         /// <summary>
         /// ’ÊíƒeƒXƒg
-        /// </summary
+        /// </summary>
         [TestMethod]
         public void TestMethod1()
         {
@@ -21,7 +21,7 @@ namespace UnitTestProject
 
         /// <summary>
         /// Shim‚Åã‘‚«
-        /// </summary
+        /// </summary>
         [TestMethod]
         public void TestMethod2()
         {
