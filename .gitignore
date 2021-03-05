@@ -1,0 +1,7 @@
+UnitTestProject/obj
+UnitTestProject/bin
+ConsoleAppTest/obj
+ConsoleAppTest/bin
+packages/
+TestResults/
+.vs/

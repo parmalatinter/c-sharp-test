@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "UnitTestProject": {
+      "commandName": "Project",
+      "sqlDebugging": false,
+      "nativeDebugging": false
+    }
+  }
+}
