@@ -5,3 +5,4 @@ ConsoleAppTest/bin
 packages/
 TestResults/
 .vs/
+*.dll
