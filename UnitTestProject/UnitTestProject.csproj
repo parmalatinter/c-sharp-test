@@ -15,6 +15,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DefineConstants>TRACE</DefineConstants>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors>;NU1605</WarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,10 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleAppTest\ConsoleAppTest.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <AdditionalDesignTimeBuildInput Remove="FakesAssemblies\**" />
   </ItemGroup>
 
@@ -47,6 +44,14 @@
       <VersionMajor>2</VersionMajor>
       <Guid>bed7f4ea-1a96-11d2-8f08-00a0c9a6186d</Guid>
     </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fakes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleAppTest\ConsoleAppTest.csproj" />
   </ItemGroup>
 
 </Project>

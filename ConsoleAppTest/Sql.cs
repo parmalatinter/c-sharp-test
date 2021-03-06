@@ -1,7 +1,4 @@
-﻿using ConsoleAppTest.pg;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ConsoleAppTest.pg.model;
 
 namespace ConsoleAppTest
 {

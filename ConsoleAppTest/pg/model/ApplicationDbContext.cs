@@ -1,12 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Configuration;
-using System;
 
-/// <summary>
-/// https://www.npgsql.org/efcore/
-/// </summary>
-namespace ConsoleAppTest.pg
+namespace ConsoleAppTest.pg.model
 {
     public class ApplicationDbContext : DbContext
     {
@@ -14,10 +9,10 @@ namespace ConsoleAppTest.pg
         {
             Configuration config = ConfigurationManager.OpenExeConfiguration(System.Reflection.Assembly.GetExecutingAssembly().Location);
             ConnectionStringsSection section = config.GetSection("connectionStrings") as ConnectionStringsSection;
-            string ConnectionString = section.ConnectionStrings[1].ConnectionString;
+            string ConnectionString = section.ConnectionStrings[0].ConnectionString;
             optionsBuilder.UseNpgsql(ConnectionString);
         }
 
-        public DbSet<model.Movie> Movie { get; set; }
+        public DbSet<Movie> Movie { get; set; }
     }
 }

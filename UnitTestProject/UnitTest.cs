@@ -1,7 +1,7 @@
 using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ConsoleAppTest;
-using ConsoleAppTest.pg;
+using ConsoleAppTest.pg.model;
 using System;
 
 namespace UnitTestProject

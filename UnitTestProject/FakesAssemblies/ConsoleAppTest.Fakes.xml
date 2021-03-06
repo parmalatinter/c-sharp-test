@@ -109,446 +109,446 @@
         <member name="P:ConsoleAppTest.Fakes.StubSql.InstanceObserver">
             <summary>インスタンス オブザーバーを取得または設定します。</summary>
         </member>
-        <member name="T:ConsoleAppTest.model.Fakes.ShimMovie">
-            <summary>ConsoleAppTest.model.Movie の shim 型</summary>
+        <member name="T:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext">
+            <summary>ConsoleAppTest.pg.model.ApplicationDbContext の shim 型</summary>
         </member>
-        <member name="M:ConsoleAppTest.model.Fakes.ShimMovie.#ctor">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.#ctor">
             <summary>新しい shim インスタンスを初期化します</summary>
         </member>
-        <member name="M:ConsoleAppTest.model.Fakes.ShimMovie.#ctor(ConsoleAppTest.model.Movie)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.#ctor(ConsoleAppTest.pg.model.ApplicationDbContext)">
             <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
         </member>
-        <member name="T:ConsoleAppTest.model.Fakes.ShimMovie.AllInstances">
+        <member name="T:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.AllInstances">
             <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
         </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.AllInstances.IdGet">
-            <summary>Movie.get_Id(Movie this) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.AllInstances.IdSetInt32">
-            <summary>Movie.set_Id(Movie this, Int32 value) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.AllInstances.NameGet">
-            <summary>Movie.get_Name(Movie this) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.AllInstances.NameSetString">
-            <summary>Movie.set_Name(Movie this, String value) の shim の設定</summary>
-        </member>
-        <member name="M:ConsoleAppTest.model.Fakes.ShimMovie.BehaveAsCurrent">
-            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
-        </member>
-        <member name="M:ConsoleAppTest.model.Fakes.ShimMovie.BehaveAsNotImplemented">
-            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.Behavior">
-            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.Constructor">
-            <summary>Movie.Movie(Movie this) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.IdGet">
-            <summary>Movie.get_Id(Movie this) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.IdSetInt32">
-            <summary>Movie.set_Id(Movie this, Int32 value) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.NameGet">
-            <summary>Movie.get_Name(Movie this) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovie.NameSetString">
-            <summary>Movie.set_Name(Movie this, String value) の shim の設定</summary>
-        </member>
-        <member name="T:ConsoleAppTest.model.Fakes.ShimMovieMap">
-            <summary>ConsoleAppTest.model.MovieMap の shim 型</summary>
-        </member>
-        <member name="M:ConsoleAppTest.model.Fakes.ShimMovieMap.#ctor">
-            <summary>新しい shim インスタンスを初期化します</summary>
-        </member>
-        <member name="M:ConsoleAppTest.model.Fakes.ShimMovieMap.#ctor(ConsoleAppTest.model.MovieMap)">
-            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
-        </member>
-        <member name="T:ConsoleAppTest.model.Fakes.ShimMovieMap.AllInstances">
-            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
-        </member>
-        <member name="M:ConsoleAppTest.model.Fakes.ShimMovieMap.BehaveAsCurrent">
-            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
-        </member>
-        <member name="M:ConsoleAppTest.model.Fakes.ShimMovieMap.BehaveAsNotImplemented">
-            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovieMap.Behavior">
-            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.ShimMovieMap.Constructor">
-            <summary>MovieMap.MovieMap(MovieMap this) の shim の設定</summary>
-        </member>
-        <member name="T:ConsoleAppTest.model.Fakes.StubMovie">
-            <summary>ConsoleAppTest.model.Movie のスタブ型</summary>
-        </member>
-        <member name="M:ConsoleAppTest.model.Fakes.StubMovie.#ctor">
-            <summary>新しいインスタンスを初期化します</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.StubMovie.CallBase">
-            <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
-        </member>
-        <member name="M:ConsoleAppTest.model.Fakes.StubMovie.InitializeStub">
-            <summary>type StubMovie の新しいインスタンスを初期化します</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.StubMovie.InstanceBehavior">
-            <summary>インスタンスの動作を取得または設定します。</summary>
-        </member>
-        <member name="P:ConsoleAppTest.model.Fakes.StubMovie.InstanceObserver">
-            <summary>インスタンス オブザーバーを取得または設定します。</summary>
-        </member>
-        <member name="T:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext">
-            <summary>ConsoleAppTest.pg.ApplicationDbContext の shim 型</summary>
-        </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.#ctor">
-            <summary>新しい shim インスタンスを初期化します</summary>
-        </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.#ctor(ConsoleAppTest.pg.ApplicationDbContext)">
-            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
-        </member>
-        <member name="T:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.AllInstances">
-            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
-        </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.AllInstances.MovieGet">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.AllInstances.MovieGet">
             <summary>ApplicationDbContext.get_Movie(ApplicationDbContext this) の shim の設定</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.AllInstances.MovieSetDbSetOfMovie">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.AllInstances.MovieSetDbSetOfMovie">
             <summary>ApplicationDbContext.set_Movie(ApplicationDbContext this, DbSet`1 value) の shim の設定</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.AllInstances.OnConfiguringDbContextOptionsBuilder">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.AllInstances.OnConfiguringDbContextOptionsBuilder">
             <summary>ApplicationDbContext.OnConfiguring(ApplicationDbContext this, DbContextOptionsBuilder optionsBuilder) の shim の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.BehaveAsCurrent">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.BehaveAsCurrent">
             <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.BehaveAsNotImplemented">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.BehaveAsNotImplemented">
             <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Behavior">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Behavior">
             <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Infrastructure.IResettableService)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Infrastructure.IResettableService)">
             <summary>インターフェイスのメンバーを shim にバインドします。</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure{System.IServiceProvider})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure{System.IServiceProvider})">
             <summary>インターフェイスのメンバーを shim にバインドします。</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies)">
             <summary>インターフェイスのメンバーを shim にバインドします。</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable)">
             <summary>インターフェイスのメンバーを shim にバインドします。</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Internal.IDbSetCache)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Bind(Microsoft.EntityFrameworkCore.Internal.IDbSetCache)">
             <summary>インターフェイスのメンバーを shim にバインドします。</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Bind(System.IAsyncDisposable)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Bind(System.IAsyncDisposable)">
             <summary>インターフェイスのメンバーを shim にバインドします。</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Bind(System.IDisposable)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Bind(System.IDisposable)">
             <summary>インターフェイスのメンバーを shim にバインドします。</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.Constructor">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.Constructor">
             <summary>ApplicationDbContext.ApplicationDbContext(ApplicationDbContext this) の shim の設定</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.MovieGet">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.MovieGet">
             <summary>ApplicationDbContext.get_Movie(ApplicationDbContext this) の shim の設定</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.MovieSetDbSetOfMovie">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.MovieSetDbSetOfMovie">
             <summary>ApplicationDbContext.set_Movie(ApplicationDbContext this, DbSet`1 value) の shim の設定</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.ShimApplicationDbContext.OnConfiguringDbContextOptionsBuilder">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.OnConfiguringDbContextOptionsBuilder">
             <summary>ApplicationDbContext.OnConfiguring(ApplicationDbContext this, DbContextOptionsBuilder optionsBuilder) の shim の設定</summary>
         </member>
-        <member name="T:ConsoleAppTest.pg.Fakes.StubApplicationDbContext">
-            <summary>ConsoleAppTest.pg.ApplicationDbContext のスタブ型</summary>
+        <member name="T:ConsoleAppTest.pg.model.Fakes.ShimMovie">
+            <summary>ConsoleAppTest.pg.model.Movie の shim 型</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.#ctor">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimMovie.#ctor">
+            <summary>新しい shim インスタンスを初期化します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimMovie.#ctor(ConsoleAppTest.pg.model.Movie)">
+            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
+        </member>
+        <member name="T:ConsoleAppTest.pg.model.Fakes.ShimMovie.AllInstances">
+            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.AllInstances.IdGet">
+            <summary>Movie.get_Id(Movie this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.AllInstances.IdSetInt32">
+            <summary>Movie.set_Id(Movie this, Int32 value) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.AllInstances.NameGet">
+            <summary>Movie.get_Name(Movie this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.AllInstances.NameSetString">
+            <summary>Movie.set_Name(Movie this, String value) の shim の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimMovie.BehaveAsCurrent">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimMovie.BehaveAsNotImplemented">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.Behavior">
+            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.Constructor">
+            <summary>Movie.Movie(Movie this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.IdGet">
+            <summary>Movie.get_Id(Movie this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.IdSetInt32">
+            <summary>Movie.set_Id(Movie this, Int32 value) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.NameGet">
+            <summary>Movie.get_Name(Movie this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovie.NameSetString">
+            <summary>Movie.set_Name(Movie this, String value) の shim の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.pg.model.Fakes.ShimMovieMap">
+            <summary>ConsoleAppTest.pg.model.MovieMap の shim 型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimMovieMap.#ctor">
+            <summary>新しい shim インスタンスを初期化します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimMovieMap.#ctor(ConsoleAppTest.pg.model.MovieMap)">
+            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
+        </member>
+        <member name="T:ConsoleAppTest.pg.model.Fakes.ShimMovieMap.AllInstances">
+            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimMovieMap.BehaveAsCurrent">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.ShimMovieMap.BehaveAsNotImplemented">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovieMap.Behavior">
+            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimMovieMap.Constructor">
+            <summary>MovieMap.MovieMap(MovieMap this) の shim の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext">
+            <summary>ConsoleAppTest.pg.model.ApplicationDbContext のスタブ型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.#ctor">
             <summary>新しいインスタンスを初期化します</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Add(System.Object)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Add(System.Object)">
             <summary>DbContext.Add(DbContext this, Object entity) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Add``1(``0)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Add``1(``0)">
             <summary>DbContext.Add(DbContext this, !!0 entity) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddAsync(System.Object,System.Threading.CancellationToken)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddAsync(System.Object,System.Threading.CancellationToken)">
             <summary>DbContext.AddAsync(DbContext this, Object entity, CancellationToken cancellationToken) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddAsync``1(``0,System.Threading.CancellationToken)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddAsync``1(``0,System.Threading.CancellationToken)">
             <summary>DbContext.AddAsync(DbContext this, !!0 entity, CancellationToken cancellationToken) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddAsyncObjectCancellationToken">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddAsyncObjectCancellationToken">
             <summary>DbContext.AddAsync(DbContext this, Object entity, CancellationToken cancellationToken) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddAsyncOf1M0CancellationToken``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask{Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddAsyncOf1M0CancellationToken``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Threading.CancellationToken,System.Threading.Tasks.ValueTask{Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}}})">
             <summary>AddAsync(DbContext this, !!0 entity, CancellationToken cancellationToken) のスタブの設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddObject">
             <summary>DbContext.Add(DbContext this, Object entity) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
             <summary>Add(DbContext this, !!0 entity) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddRange(System.Collections.Generic.IEnumerable{System.Object})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddRange(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>DbContext.AddRange(DbContext this, IEnumerable`1 entities) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddRange(System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddRange(System.Object[])">
             <summary>DbContext.AddRange(DbContext this, Object[] entities) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddRangeAsync(System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddRangeAsync(System.Object[])">
             <summary>DbContext.AddRangeAsync(DbContext this, Object[] entities) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddRangeAsync(System.Collections.Generic.IEnumerable{System.Object},System.Threading.CancellationToken)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddRangeAsync(System.Collections.Generic.IEnumerable{System.Object},System.Threading.CancellationToken)">
             <summary>DbContext.AddRangeAsync(DbContext this, IEnumerable`1 entities, CancellationToken cancellationToken) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddRangeAsyncIEnumerableOfObjectCancellationToken">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddRangeAsyncIEnumerableOfObjectCancellationToken">
             <summary>DbContext.AddRangeAsync(DbContext this, IEnumerable`1 entities, CancellationToken cancellationToken) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddRangeAsyncObjectArray">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddRangeAsyncObjectArray">
             <summary>DbContext.AddRangeAsync(DbContext this, Object[] entities) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddRangeIEnumerableOfObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddRangeIEnumerableOfObject">
             <summary>DbContext.AddRange(DbContext this, IEnumerable`1 entities) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AddRangeObjectArray">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AddRangeObjectArray">
             <summary>DbContext.AddRange(DbContext this, Object[] entities) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Attach(System.Object)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Attach(System.Object)">
             <summary>DbContext.Attach(DbContext this, Object entity) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Attach``1(``0)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Attach``1(``0)">
             <summary>DbContext.Attach(DbContext this, !!0 entity) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AttachObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachObject">
             <summary>DbContext.Attach(DbContext this, Object entity) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AttachOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
             <summary>Attach(DbContext this, !!0 entity) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AttachRange(System.Collections.Generic.IEnumerable{System.Object})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachRange(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>DbContext.AttachRange(DbContext this, IEnumerable`1 entities) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AttachRange(System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachRange(System.Object[])">
             <summary>DbContext.AttachRange(DbContext this, Object[] entities) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AttachRangeIEnumerableOfObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachRangeIEnumerableOfObject">
             <summary>DbContext.AttachRange(DbContext this, IEnumerable`1 entities) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.AttachRangeObjectArray">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachRangeObjectArray">
             <summary>DbContext.AttachRange(DbContext this, Object[] entities) の stub の設定</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.CallBase">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.CallBase">
             <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.ChangeTracker">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.ChangeTracker">
             <summary>DbContext.get_ChangeTracker(DbContext this) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.ChangeTrackerGet">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.ChangeTrackerGet">
             <summary>DbContext.get_ChangeTracker(DbContext this) の stub の設定</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.ContextId">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.ContextId">
             <summary>DbContext.get_ContextId(DbContext this) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.ContextIdGet">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.ContextIdGet">
             <summary>DbContext.get_ContextId(DbContext this) の stub の設定</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Database">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Database">
             <summary>DbContext.get_Database(DbContext this) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.DatabaseGet">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.DatabaseGet">
             <summary>DbContext.get_Database(DbContext this) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Dispose">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Dispose">
             <summary>DbContext.Dispose(DbContext this) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Dispose01">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Dispose01">
             <summary>DbContext.Dispose(DbContext this) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.DisposeAsync">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.DisposeAsync">
             <summary>DbContext.DisposeAsync(DbContext this) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.DisposeAsync01">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.DisposeAsync01">
             <summary>DbContext.DisposeAsync(DbContext this) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Entry(System.Object)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Entry(System.Object)">
             <summary>DbContext.Entry(DbContext this, Object entity) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Entry``1(``0)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Entry``1(``0)">
             <summary>DbContext.Entry(DbContext this, !!0 entity) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.EntryObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.EntryObject">
             <summary>DbContext.Entry(DbContext this, Object entity) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.EntryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.EntryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
             <summary>Entry(DbContext this, !!0 entity) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Find(System.Type,System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Find(System.Type,System.Object[])">
             <summary>DbContext.Find(DbContext this, Type entityType, Object[] keyValues) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Find``1(System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Find``1(System.Object[])">
             <summary>DbContext.Find(DbContext this, Object[] keyValues) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindAsync(System.Type,System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsync(System.Type,System.Object[])">
             <summary>DbContext.FindAsync(DbContext this, Type entityType, Object[] keyValues) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindAsync(System.Type,System.Object[],System.Threading.CancellationToken)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsync(System.Type,System.Object[],System.Threading.CancellationToken)">
             <summary>DbContext.FindAsync(DbContext this, Type entityType, Object[] keyValues, CancellationToken cancellationToken) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindAsync``1(System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsync``1(System.Object[])">
             <summary>DbContext.FindAsync(DbContext this, Object[] keyValues) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindAsync``1(System.Object[],System.Threading.CancellationToken)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsync``1(System.Object[],System.Threading.CancellationToken)">
             <summary>DbContext.FindAsync(DbContext this, Object[] keyValues, CancellationToken cancellationToken) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindAsyncOf1ObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object[],System.Threading.Tasks.ValueTask{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsyncOf1ObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object[],System.Threading.Tasks.ValueTask{``0}})">
             <summary>FindAsync(DbContext this, Object[] keyValues) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindAsyncOf1ObjectArrayCancellationToken``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object[],System.Threading.CancellationToken,System.Threading.Tasks.ValueTask{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsyncOf1ObjectArrayCancellationToken``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object[],System.Threading.CancellationToken,System.Threading.Tasks.ValueTask{``0}})">
             <summary>FindAsync(DbContext this, Object[] keyValues, CancellationToken cancellationToken) のスタブの設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindAsyncTypeObjectArray">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsyncTypeObjectArray">
             <summary>DbContext.FindAsync(DbContext this, Type entityType, Object[] keyValues) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindAsyncTypeObjectArrayCancellationToken">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsyncTypeObjectArrayCancellationToken">
             <summary>DbContext.FindAsync(DbContext this, Type entityType, Object[] keyValues, CancellationToken cancellationToken) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindOf1ObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object[],``0})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindOf1ObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Object[],``0})">
             <summary>Find(DbContext this, Object[] keyValues) のスタブの設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FindTypeObjectArray">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindTypeObjectArray">
             <summary>DbContext.Find(DbContext this, Type entityType, Object[] keyValues) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FromExpression``1(System.Linq.Expressions.Expression{System.Func{System.Linq.IQueryable{``0}}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FromExpression``1(System.Linq.Expressions.Expression{System.Func{System.Linq.IQueryable{``0}}})">
             <summary>DbContext.FromExpression(DbContext this, Expression`1 expression) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.FromExpressionOf1ExpressionOfFuncOfIQueryableOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Linq.Expressions.Expression{System.Func{System.Linq.IQueryable{``0}}},System.Linq.IQueryable{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FromExpressionOf1ExpressionOfFuncOfIQueryableOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Linq.Expressions.Expression{System.Func{System.Linq.IQueryable{``0}}},System.Linq.IQueryable{``0}})">
             <summary>FromExpression(DbContext this, Expression`1 expression) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.GetHashCode">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.GetHashCode">
             <summary>DbContext.GetHashCode(DbContext this) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.GetHashCode01">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.GetHashCode01">
             <summary>DbContext.GetHashCode(DbContext this) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.InitializeStub">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.InitializeStub">
             <summary>type StubApplicationDbContext の新しいインスタンスを初期化します</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.InstanceBehavior">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.InstanceBehavior">
             <summary>インスタンスの動作を取得または設定します。</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.InstanceObserver">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.InstanceObserver">
             <summary>インスタンス オブザーバーを取得または設定します。</summary>
         </member>
-        <member name="P:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Model">
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Model">
             <summary>DbContext.get_Model(DbContext this) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.ModelGet">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.ModelGet">
             <summary>DbContext.get_Model(DbContext this) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
             <summary>ApplicationDbContext.OnConfiguring(ApplicationDbContext this, DbContextOptionsBuilder optionsBuilder) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.OnConfiguringDbContextOptionsBuilder">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.OnConfiguringDbContextOptionsBuilder">
             <summary>ApplicationDbContext.OnConfiguring(ApplicationDbContext this, DbContextOptionsBuilder optionsBuilder) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <summary>DbContext.OnModelCreating(DbContext this, ModelBuilder modelBuilder) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.OnModelCreatingModelBuilder">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.OnModelCreatingModelBuilder">
             <summary>DbContext.OnModelCreating(DbContext this, ModelBuilder modelBuilder) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Remove(System.Object)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Remove(System.Object)">
             <summary>DbContext.Remove(DbContext this, Object entity) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Remove``1(``0)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Remove``1(``0)">
             <summary>DbContext.Remove(DbContext this, !!0 entity) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.RemoveObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveObject">
             <summary>DbContext.Remove(DbContext this, Object entity) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.RemoveOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
             <summary>Remove(DbContext this, !!0 entity) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.RemoveRange(System.Collections.Generic.IEnumerable{System.Object})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveRange(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>DbContext.RemoveRange(DbContext this, IEnumerable`1 entities) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.RemoveRange(System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveRange(System.Object[])">
             <summary>DbContext.RemoveRange(DbContext this, Object[] entities) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.RemoveRangeIEnumerableOfObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveRangeIEnumerableOfObject">
             <summary>DbContext.RemoveRange(DbContext this, IEnumerable`1 entities) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.RemoveRangeObjectArray">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveRangeObjectArray">
             <summary>DbContext.RemoveRange(DbContext this, Object[] entities) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SaveChanges">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SaveChanges">
             <summary>DbContext.SaveChanges(DbContext this) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SaveChanges(System.Boolean)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SaveChanges(System.Boolean)">
             <summary>DbContext.SaveChanges(DbContext this, Boolean acceptAllChangesOnSuccess) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SaveChanges01">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SaveChanges01">
             <summary>DbContext.SaveChanges(DbContext this) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SaveChangesAsync(System.Threading.CancellationToken)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SaveChangesAsync(System.Threading.CancellationToken)">
             <summary>DbContext.SaveChangesAsync(DbContext this, CancellationToken cancellationToken) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)">
             <summary>DbContext.SaveChangesAsync(DbContext this, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SaveChangesAsyncBooleanCancellationToken">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SaveChangesAsyncBooleanCancellationToken">
             <summary>DbContext.SaveChangesAsync(DbContext this, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SaveChangesAsyncCancellationToken">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SaveChangesAsyncCancellationToken">
             <summary>DbContext.SaveChangesAsync(DbContext this, CancellationToken cancellationToken) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SaveChangesBoolean">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SaveChangesBoolean">
             <summary>DbContext.SaveChanges(DbContext this, Boolean acceptAllChangesOnSuccess) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Set``1">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Set``1">
             <summary>DbContext.Set(DbContext this) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Set``1(System.String)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Set``1(System.String)">
             <summary>DbContext.Set(DbContext this, String name) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.EntityFrameworkCore.DbSet{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.EntityFrameworkCore.DbSet{``0}})">
             <summary>Set(DbContext this) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.SetOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,Microsoft.EntityFrameworkCore.DbSet{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.SetOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,Microsoft.EntityFrameworkCore.DbSet{``0}})">
             <summary>Set(DbContext this, String name) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.ToString">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.ToString">
             <summary>DbContext.ToString(DbContext this) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.ToString01">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.ToString01">
             <summary>DbContext.ToString(DbContext this) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Update(System.Object)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Update(System.Object)">
             <summary>DbContext.Update(DbContext this, Object entity) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.Update``1(``0)">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Update``1(``0)">
             <summary>DbContext.Update(DbContext this, !!0 entity) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.UpdateObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.UpdateObject">
             <summary>DbContext.Update(DbContext this, Object entity) の stub の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.UpdateOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.UpdateOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
             <summary>Update(DbContext this, !!0 entity) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.UpdateRange(System.Collections.Generic.IEnumerable{System.Object})">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.UpdateRange(System.Collections.Generic.IEnumerable{System.Object})">
             <summary>DbContext.UpdateRange(DbContext this, IEnumerable`1 entities) の スタブ の設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.UpdateRange(System.Object[])">
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.UpdateRange(System.Object[])">
             <summary>DbContext.UpdateRange(DbContext this, Object[] entities) の スタブ の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.UpdateRangeIEnumerableOfObject">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.UpdateRangeIEnumerableOfObject">
             <summary>DbContext.UpdateRange(DbContext this, IEnumerable`1 entities) の stub の設定</summary>
         </member>
-        <member name="F:ConsoleAppTest.pg.Fakes.StubApplicationDbContext.UpdateRangeObjectArray">
+        <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.UpdateRangeObjectArray">
             <summary>DbContext.UpdateRange(DbContext this, Object[] entities) の stub の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.pg.model.Fakes.StubMovie">
+            <summary>ConsoleAppTest.pg.model.Movie のスタブ型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubMovie.#ctor">
+            <summary>新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubMovie.CallBase">
+            <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubMovie.InitializeStub">
+            <summary>type StubMovie の新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubMovie.InstanceBehavior">
+            <summary>インスタンスの動作を取得または設定します。</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.StubMovie.InstanceObserver">
+            <summary>インスタンス オブザーバーを取得または設定します。</summary>
         </member>
     </members>
 </doc>
