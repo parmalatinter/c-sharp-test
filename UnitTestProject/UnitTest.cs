@@ -2,6 +2,7 @@ using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ConsoleAppTest;
 using ConsoleAppTest.pg.model;
+using ConsoleAppTest.Migrations;
 using System;
 
 namespace UnitTestProject
@@ -64,13 +65,17 @@ namespace UnitTestProject
             using (ShimsContext.Create())
             {
                 ApplicationDbContext applicationDbContext = new ApplicationDbContext();
-                //var actual = from line in applicationDbContext.Movies select line;
-                //Assert.AreEqual(Program.res, actual);
 
-                using (ApplicationDbContext db = new ApplicationDbContext())
+                using (ApplicationDbContext context = new ApplicationDbContext())
                 {
+                    Truncate.Exec(context);
+                    Seed.Exec(context);
+
+                    context.Database.EnsureCreated();
+                    context.SaveChanges();
+
                     // [èoóÕ]
-                    foreach (var member in db.Movie)
+                    foreach (var member in context.Movie)
                     {
                         Console.WriteLine($"{member.Id}, {member.Name}");
                         Assert.AreEqual(1, member.Id);

@@ -109,6 +109,312 @@
         <member name="P:ConsoleAppTest.Fakes.StubSql.InstanceObserver">
             <summary>インスタンス オブザーバーを取得または設定します。</summary>
         </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate">
+            <summary>ConsoleAppTest.Migrations.InitialCreate の shim 型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.#ctor">
+            <summary>新しい shim インスタンスを初期化します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.#ctor(ConsoleAppTest.Migrations.InitialCreate)">
+            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.AllInstances">
+            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.AllInstances.BuildTargetModelModelBuilder">
+            <summary>InitialCreate.BuildTargetModel(InitialCreate this, ModelBuilder modelBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.AllInstances.DownMigrationBuilder">
+            <summary>InitialCreate.Down(InitialCreate this, MigrationBuilder migrationBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.AllInstances.UpMigrationBuilder">
+            <summary>InitialCreate.Up(InitialCreate this, MigrationBuilder migrationBuilder) の shim の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.BehaveAsCurrent">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.BehaveAsNotImplemented">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.Behavior">
+            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.BuildTargetModelModelBuilder">
+            <summary>InitialCreate.BuildTargetModel(InitialCreate this, ModelBuilder modelBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.Constructor">
+            <summary>InitialCreate.InitialCreate(InitialCreate this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.DownMigrationBuilder">
+            <summary>InitialCreate.Down(InitialCreate this, MigrationBuilder migrationBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate.UpMigrationBuilder">
+            <summary>InitialCreate.Up(InitialCreate this, MigrationBuilder migrationBuilder) の shim の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.ShimMyProj">
+            <summary>ConsoleAppTest.Migrations.MyProj の shim 型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimMyProj.#ctor">
+            <summary>新しい shim インスタンスを初期化します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimMyProj.#ctor(ConsoleAppTest.Migrations.MyProj)">
+            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.ShimMyProj.AllInstances">
+            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimMyProj.AllInstances.BuildTargetModelModelBuilder">
+            <summary>MyProj.BuildTargetModel(MyProj this, ModelBuilder modelBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimMyProj.AllInstances.DownMigrationBuilder">
+            <summary>MyProj.Down(MyProj this, MigrationBuilder migrationBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimMyProj.AllInstances.UpMigrationBuilder">
+            <summary>MyProj.Up(MyProj this, MigrationBuilder migrationBuilder) の shim の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimMyProj.BehaveAsCurrent">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimMyProj.BehaveAsNotImplemented">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimMyProj.Behavior">
+            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimMyProj.BuildTargetModelModelBuilder">
+            <summary>MyProj.BuildTargetModel(MyProj this, ModelBuilder modelBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimMyProj.Constructor">
+            <summary>MyProj.MyProj(MyProj this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimMyProj.DownMigrationBuilder">
+            <summary>MyProj.Down(MyProj this, MigrationBuilder migrationBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimMyProj.UpMigrationBuilder">
+            <summary>MyProj.Up(MyProj this, MigrationBuilder migrationBuilder) の shim の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.ShimSeed">
+            <summary>ConsoleAppTest.Migrations.Seed の shim 型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimSeed.#ctor">
+            <summary>新しい shim インスタンスを初期化します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimSeed.#ctor(ConsoleAppTest.Migrations.Seed)">
+            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.ShimSeed.AllInstances">
+            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimSeed.BehaveAsCurrent">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimSeed.BehaveAsNotImplemented">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimSeed.Behavior">
+            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimSeed.Constructor">
+            <summary>Seed.Seed(Seed this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimSeed.ExecApplicationDbContext">
+            <summary>Seed.Exec(ApplicationDbContext context) の shim の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.ShimTruncate">
+            <summary>ConsoleAppTest.Migrations.Truncate の shim 型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimTruncate.#ctor">
+            <summary>新しい shim インスタンスを初期化します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimTruncate.#ctor(ConsoleAppTest.Migrations.Truncate)">
+            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.ShimTruncate.AllInstances">
+            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimTruncate.BehaveAsCurrent">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.ShimTruncate.BehaveAsNotImplemented">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimTruncate.Behavior">
+            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimTruncate.Constructor">
+            <summary>Truncate.Truncate(Truncate this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.ShimTruncate.ExecApplicationDbContext">
+            <summary>Truncate.Exec(ApplicationDbContext context) の shim の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.StubInitialCreate">
+            <summary>ConsoleAppTest.Migrations.InitialCreate のスタブ型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.#ctor">
+            <summary>新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.ActiveProvider">
+            <summary>Migration.get_ActiveProvider(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.ActiveProviderGet">
+            <summary>Migration.get_ActiveProvider(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.ActiveProviderSetString">
+            <summary>Migration.set_ActiveProvider(Migration this, String value) の stub の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.AttachBackingFieldToActiveProvider">
+            <summary>バッキング フィールドを持つプロパティとして StubInitialCreate.ActiveProvider をエミュレートするために、デリゲートをアタッチします。</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>InitialCreate.BuildTargetModel(InitialCreate this, ModelBuilder modelBuilder) の スタブ の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.BuildTargetModelModelBuilder">
+            <summary>InitialCreate.BuildTargetModel(InitialCreate this, ModelBuilder modelBuilder) の stub の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.CallBase">
+            <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>InitialCreate.Down(InitialCreate this, MigrationBuilder migrationBuilder) の スタブ の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.DownMigrationBuilder">
+            <summary>InitialCreate.Down(InitialCreate this, MigrationBuilder migrationBuilder) の stub の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.DownOperations">
+            <summary>Migration.get_DownOperations(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.DownOperationsGet">
+            <summary>Migration.get_DownOperations(Migration this) の stub の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.InitializeStub">
+            <summary>type StubInitialCreate の新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.InstanceBehavior">
+            <summary>インスタンスの動作を取得または設定します。</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.InstanceObserver">
+            <summary>インスタンス オブザーバーを取得または設定します。</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.TargetModel">
+            <summary>Migration.get_TargetModel(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.TargetModelGet">
+            <summary>Migration.get_TargetModel(Migration this) の stub の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>InitialCreate.Up(InitialCreate this, MigrationBuilder migrationBuilder) の スタブ の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.UpMigrationBuilder">
+            <summary>InitialCreate.Up(InitialCreate this, MigrationBuilder migrationBuilder) の stub の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.UpOperations">
+            <summary>Migration.get_UpOperations(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubInitialCreate.UpOperationsGet">
+            <summary>Migration.get_UpOperations(Migration this) の stub の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.StubMyProj">
+            <summary>ConsoleAppTest.Migrations.MyProj のスタブ型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubMyProj.#ctor">
+            <summary>新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubMyProj.ActiveProvider">
+            <summary>Migration.get_ActiveProvider(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubMyProj.ActiveProviderGet">
+            <summary>Migration.get_ActiveProvider(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubMyProj.ActiveProviderSetString">
+            <summary>Migration.set_ActiveProvider(Migration this, String value) の stub の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubMyProj.AttachBackingFieldToActiveProvider">
+            <summary>バッキング フィールドを持つプロパティとして StubMyProj.ActiveProvider をエミュレートするために、デリゲートをアタッチします。</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubMyProj.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>MyProj.BuildTargetModel(MyProj this, ModelBuilder modelBuilder) の スタブ の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubMyProj.BuildTargetModelModelBuilder">
+            <summary>MyProj.BuildTargetModel(MyProj this, ModelBuilder modelBuilder) の stub の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubMyProj.CallBase">
+            <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubMyProj.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>MyProj.Down(MyProj this, MigrationBuilder migrationBuilder) の スタブ の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubMyProj.DownMigrationBuilder">
+            <summary>MyProj.Down(MyProj this, MigrationBuilder migrationBuilder) の stub の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubMyProj.DownOperations">
+            <summary>Migration.get_DownOperations(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubMyProj.DownOperationsGet">
+            <summary>Migration.get_DownOperations(Migration this) の stub の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubMyProj.InitializeStub">
+            <summary>type StubMyProj の新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubMyProj.InstanceBehavior">
+            <summary>インスタンスの動作を取得または設定します。</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubMyProj.InstanceObserver">
+            <summary>インスタンス オブザーバーを取得または設定します。</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubMyProj.TargetModel">
+            <summary>Migration.get_TargetModel(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubMyProj.TargetModelGet">
+            <summary>Migration.get_TargetModel(Migration this) の stub の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubMyProj.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>MyProj.Up(MyProj this, MigrationBuilder migrationBuilder) の スタブ の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubMyProj.UpMigrationBuilder">
+            <summary>MyProj.Up(MyProj this, MigrationBuilder migrationBuilder) の stub の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubMyProj.UpOperations">
+            <summary>Migration.get_UpOperations(Migration this) の stub の設定</summary>
+        </member>
+        <member name="F:ConsoleAppTest.Migrations.Fakes.StubMyProj.UpOperationsGet">
+            <summary>Migration.get_UpOperations(Migration this) の stub の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.StubSeed">
+            <summary>ConsoleAppTest.Migrations.Seed のスタブ型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubSeed.#ctor">
+            <summary>新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubSeed.CallBase">
+            <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubSeed.InitializeStub">
+            <summary>type StubSeed の新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubSeed.InstanceBehavior">
+            <summary>インスタンスの動作を取得または設定します。</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubSeed.InstanceObserver">
+            <summary>インスタンス オブザーバーを取得または設定します。</summary>
+        </member>
+        <member name="T:ConsoleAppTest.Migrations.Fakes.StubTruncate">
+            <summary>ConsoleAppTest.Migrations.Truncate のスタブ型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubTruncate.#ctor">
+            <summary>新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubTruncate.CallBase">
+            <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.Migrations.Fakes.StubTruncate.InitializeStub">
+            <summary>type StubTruncate の新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubTruncate.InstanceBehavior">
+            <summary>インスタンスの動作を取得または設定します。</summary>
+        </member>
+        <member name="P:ConsoleAppTest.Migrations.Fakes.StubTruncate.InstanceObserver">
+            <summary>インスタンス オブザーバーを取得または設定します。</summary>
+        </member>
         <member name="T:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext">
             <summary>ConsoleAppTest.pg.model.ApplicationDbContext の shim 型</summary>
         </member>
@@ -129,6 +435,9 @@
         </member>
         <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.AllInstances.OnConfiguringDbContextOptionsBuilder">
             <summary>ApplicationDbContext.OnConfiguring(ApplicationDbContext this, DbContextOptionsBuilder optionsBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.AllInstances.OnModelCreatingModelBuilder">
+            <summary>ApplicationDbContext.OnModelCreating(ApplicationDbContext this, ModelBuilder modelBuilder) の shim の設定</summary>
         </member>
         <member name="M:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.BehaveAsCurrent">
             <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
@@ -171,6 +480,9 @@
         </member>
         <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.OnConfiguringDbContextOptionsBuilder">
             <summary>ApplicationDbContext.OnConfiguring(ApplicationDbContext this, DbContextOptionsBuilder optionsBuilder) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext.OnModelCreatingModelBuilder">
+            <summary>ApplicationDbContext.OnModelCreating(ApplicationDbContext this, ModelBuilder modelBuilder) の shim の設定</summary>
         </member>
         <member name="T:ConsoleAppTest.pg.model.Fakes.ShimMovie">
             <summary>ConsoleAppTest.pg.model.Movie の shim 型</summary>
@@ -310,11 +622,11 @@
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
             <summary>Attach(DbContext this, !!0 entity) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachRange(System.Collections.Generic.IEnumerable{System.Object})">
-            <summary>DbContext.AttachRange(DbContext this, IEnumerable`1 entities) の スタブ の設定</summary>
-        </member>
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachRange(System.Object[])">
             <summary>DbContext.AttachRange(DbContext this, Object[] entities) の スタブ の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachRange(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>DbContext.AttachRange(DbContext this, IEnumerable`1 entities) の スタブ の設定</summary>
         </member>
         <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.AttachRangeIEnumerableOfObject">
             <summary>DbContext.AttachRange(DbContext this, IEnumerable`1 entities) の stub の設定</summary>
@@ -367,11 +679,11 @@
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.EntryOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
             <summary>Entry(DbContext this, !!0 entity) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Find(System.Type,System.Object[])">
-            <summary>DbContext.Find(DbContext this, Type entityType, Object[] keyValues) の スタブ の設定</summary>
-        </member>
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Find``1(System.Object[])">
             <summary>DbContext.Find(DbContext this, Object[] keyValues) の スタブ の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Find(System.Type,System.Object[])">
+            <summary>DbContext.Find(DbContext this, Type entityType, Object[] keyValues) の スタブ の設定</summary>
         </member>
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.FindAsync(System.Type,System.Object[])">
             <summary>DbContext.FindAsync(DbContext this, Type entityType, Object[] keyValues) の スタブ の設定</summary>
@@ -437,10 +749,10 @@
             <summary>ApplicationDbContext.OnConfiguring(ApplicationDbContext this, DbContextOptionsBuilder optionsBuilder) の stub の設定</summary>
         </member>
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
-            <summary>DbContext.OnModelCreating(DbContext this, ModelBuilder modelBuilder) の スタブ の設定</summary>
+            <summary>ApplicationDbContext.OnModelCreating(ApplicationDbContext this, ModelBuilder modelBuilder) の スタブ の設定</summary>
         </member>
         <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.OnModelCreatingModelBuilder">
-            <summary>DbContext.OnModelCreating(DbContext this, ModelBuilder modelBuilder) の stub の設定</summary>
+            <summary>ApplicationDbContext.OnModelCreating(ApplicationDbContext this, ModelBuilder modelBuilder) の stub の設定</summary>
         </member>
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.Remove(System.Object)">
             <summary>DbContext.Remove(DbContext this, Object entity) の スタブ の設定</summary>
@@ -454,11 +766,11 @@
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry{``0}})">
             <summary>Remove(DbContext this, !!0 entity) のスタブの設定</summary>
         </member>
-        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveRange(System.Collections.Generic.IEnumerable{System.Object})">
-            <summary>DbContext.RemoveRange(DbContext this, IEnumerable`1 entities) の スタブ の設定</summary>
-        </member>
         <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveRange(System.Object[])">
             <summary>DbContext.RemoveRange(DbContext this, Object[] entities) の スタブ の設定</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveRange(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>DbContext.RemoveRange(DbContext this, IEnumerable`1 entities) の スタブ の設定</summary>
         </member>
         <member name="F:ConsoleAppTest.pg.model.Fakes.StubApplicationDbContext.RemoveRangeIEnumerableOfObject">
             <summary>DbContext.RemoveRange(DbContext this, IEnumerable`1 entities) の stub の設定</summary>

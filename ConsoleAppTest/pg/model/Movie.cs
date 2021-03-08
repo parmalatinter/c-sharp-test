@@ -22,5 +22,6 @@ namespace ConsoleAppTest.pg.model
             this.HasKey(Movie => Movie.Id);
             this.Property(Movie => Movie.Name);
         }
+
     }
 }

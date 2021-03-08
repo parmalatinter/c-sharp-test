@@ -17,5 +17,22 @@ namespace ConsoleAppTest.pg.model
         }
 
         public DbSet<Movie> Movie { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Movie>()
+                .HasData(
+                    new Movie
+                    {
+                        Id = 1,
+                        Name = "TEST"
+                    },
+                    new Movie
+                    {
+                        Id = 2,
+                        Name = "TEST2",
+                    }
+                );
+        }
     }
 }
