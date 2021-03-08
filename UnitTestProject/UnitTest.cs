@@ -10,6 +10,17 @@ namespace UnitTestProject
     [TestClass]
     public class UnitTest
     {
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            using (ApplicationDbContext context = new ApplicationDbContext())
+            {
+                Truncate.Exec(context);
+                Seed.Exec(context);
+                Console.WriteLine("TestCleanup");
+            }
+        }
+
         /// <summary>
         /// 通常テスト
         /// </summary>
@@ -64,15 +75,8 @@ namespace UnitTestProject
         {
             using (ShimsContext.Create())
             {
-                ApplicationDbContext applicationDbContext = new ApplicationDbContext();
-
                 using (ApplicationDbContext context = new ApplicationDbContext())
                 {
-                    Truncate.Exec(context);
-                    Seed.Exec(context);
-
-                    context.Database.EnsureCreated();
-                    context.SaveChanges();
 
                     // [出力]
                     foreach (var member in context.Movie)
