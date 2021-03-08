@@ -3,6 +3,9 @@ using System.Configuration;
 
 namespace ConsoleAppTest.pg.model
 {
+    /// <summary>
+    /// https://www.npgsql.org/efcore/
+    /// </summary>
     public class ApplicationDbContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

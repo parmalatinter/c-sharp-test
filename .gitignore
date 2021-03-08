@@ -1,9 +1,11 @@
 UnitTestProject/obj
-UnitTestProject/FakesAssemblies
+UnitTestProject/FakesAssemblies/
+UnitTestProject/FakesAssemblies/*.dll
+
 UnitTestProject/bin
 ConsoleAppTest/obj
 ConsoleAppTest/bin
 packages/
 TestResults/
 .vs/
-*.dll
+*.dll 
