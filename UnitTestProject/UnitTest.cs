@@ -68,23 +68,19 @@ namespace UnitTestProject
         }
 
         /// <summary>
-        /// Shimで上書きしたあとに元のメソッドを呼び出す
+        /// DB取得テスト
         /// </summary>
         [TestMethod]
         public void TestMethod4()
         {
-            using (ShimsContext.Create())
+            using (ApplicationDbContext context = new ApplicationDbContext())
             {
-                using (ApplicationDbContext context = new ApplicationDbContext())
+                // [出力]
+                foreach (var member in context.Movie)
                 {
-
-                    // [出力]
-                    foreach (var member in context.Movie)
-                    {
-                        Console.WriteLine($"{member.Id}, {member.Name}");
-                        Assert.AreEqual(1, member.Id);
-                        Assert.AreEqual("TEST", member.Name);
-                    }
+                    Console.WriteLine($"{member.Id}, {member.Name}");
+                    Assert.AreEqual(1, member.Id);
+                    Assert.AreEqual("TEST", member.Name);
                 }
             }
         }
