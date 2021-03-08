@@ -4,6 +4,8 @@ using ConsoleAppTest;
 using ConsoleAppTest.pg.model;
 using ConsoleAppTest.Migrations;
 using System;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace UnitTestProject
 {
@@ -82,6 +84,8 @@ namespace UnitTestProject
                     Assert.AreEqual(1, member.Id);
                     Assert.AreEqual("TEST", member.Name);
                 }
+
+                Console.WriteLine(context.Movie.Where(a => a.Name == "TEST").ToQueryString());
             }
         }
     }
