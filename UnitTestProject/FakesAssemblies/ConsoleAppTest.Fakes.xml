@@ -16,9 +16,6 @@
         <member name="T:ConsoleAppTest.Fakes.ShimProgram.AllInstances">
             <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
         </member>
-        <member name="P:ConsoleAppTest.Fakes.ShimProgram.AllInstances.ByeBye">
-            <summary>Program.ByeBye(Program this) の shim の設定</summary>
-        </member>
         <member name="M:ConsoleAppTest.Fakes.ShimProgram.BehaveAsCurrent">
             <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
         </member>
@@ -29,7 +26,7 @@
             <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
         </member>
         <member name="P:ConsoleAppTest.Fakes.ShimProgram.ByeBye">
-            <summary>Program.ByeBye(Program this) の shim の設定</summary>
+            <summary>Program.ByeBye() の shim の設定</summary>
         </member>
         <member name="P:ConsoleAppTest.Fakes.ShimProgram.Constructor">
             <summary>Program.Program(Program this) の shim の設定</summary>
@@ -39,39 +36,6 @@
         </member>
         <member name="P:ConsoleAppTest.Fakes.ShimProgram.MainStringArray">
             <summary>Program.Main(String[] args) の shim の設定</summary>
-        </member>
-        <member name="T:ConsoleAppTest.Fakes.ShimSql">
-            <summary>ConsoleAppTest.Sql の shim 型</summary>
-        </member>
-        <member name="M:ConsoleAppTest.Fakes.ShimSql.#ctor">
-            <summary>新しい shim インスタンスを初期化します</summary>
-        </member>
-        <member name="M:ConsoleAppTest.Fakes.ShimSql.#ctor(ConsoleAppTest.Sql)">
-            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
-        </member>
-        <member name="T:ConsoleAppTest.Fakes.ShimSql.AllInstances">
-            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
-        </member>
-        <member name="P:ConsoleAppTest.Fakes.ShimSql.AllInstances.ByeBye">
-            <summary>Sql.ByeBye(Sql this) の shim の設定</summary>
-        </member>
-        <member name="M:ConsoleAppTest.Fakes.ShimSql.BehaveAsCurrent">
-            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
-        </member>
-        <member name="M:ConsoleAppTest.Fakes.ShimSql.BehaveAsNotImplemented">
-            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
-        </member>
-        <member name="P:ConsoleAppTest.Fakes.ShimSql.Behavior">
-            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
-        </member>
-        <member name="P:ConsoleAppTest.Fakes.ShimSql.ByeBye">
-            <summary>Sql.ByeBye(Sql this) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.Fakes.ShimSql.Constructor">
-            <summary>Sql.Sql(Sql this) の shim の設定</summary>
-        </member>
-        <member name="P:ConsoleAppTest.Fakes.ShimSql.GetMovie">
-            <summary>Sql.GetMovie() の shim の設定</summary>
         </member>
         <member name="T:ConsoleAppTest.Fakes.StubProgram">
             <summary>ConsoleAppTest.Program のスタブ型</summary>
@@ -89,24 +53,6 @@
             <summary>インスタンスの動作を取得または設定します。</summary>
         </member>
         <member name="P:ConsoleAppTest.Fakes.StubProgram.InstanceObserver">
-            <summary>インスタンス オブザーバーを取得または設定します。</summary>
-        </member>
-        <member name="T:ConsoleAppTest.Fakes.StubSql">
-            <summary>ConsoleAppTest.Sql のスタブ型</summary>
-        </member>
-        <member name="M:ConsoleAppTest.Fakes.StubSql.#ctor">
-            <summary>新しいインスタンスを初期化します</summary>
-        </member>
-        <member name="P:ConsoleAppTest.Fakes.StubSql.CallBase">
-            <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
-        </member>
-        <member name="M:ConsoleAppTest.Fakes.StubSql.InitializeStub">
-            <summary>type StubSql の新しいインスタンスを初期化します</summary>
-        </member>
-        <member name="P:ConsoleAppTest.Fakes.StubSql.InstanceBehavior">
-            <summary>インスタンスの動作を取得または設定します。</summary>
-        </member>
-        <member name="P:ConsoleAppTest.Fakes.StubSql.InstanceObserver">
             <summary>インスタンス オブザーバーを取得または設定します。</summary>
         </member>
         <member name="T:ConsoleAppTest.Migrations.Fakes.ShimInitialCreate">
@@ -413,6 +359,51 @@
             <summary>インスタンスの動作を取得または設定します。</summary>
         </member>
         <member name="P:ConsoleAppTest.Migrations.Fakes.StubTruncate.InstanceObserver">
+            <summary>インスタンス オブザーバーを取得または設定します。</summary>
+        </member>
+        <member name="T:ConsoleAppTest.pg.Fakes.ShimPgService">
+            <summary>ConsoleAppTest.pg.PgService の shim 型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.Fakes.ShimPgService.#ctor">
+            <summary>新しい shim インスタンスを初期化します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.Fakes.ShimPgService.#ctor(ConsoleAppTest.pg.PgService)">
+            <summary>指定されたインスタンスに対して新しい shim を初期化します</summary>
+        </member>
+        <member name="T:ConsoleAppTest.pg.Fakes.ShimPgService.AllInstances">
+            <summary>すべてのインスタンス メンバーに対して shim を定義します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.Fakes.ShimPgService.BehaveAsCurrent">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;Current&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.Fakes.ShimPgService.BehaveAsNotImplemented">
+            <summary>shim が適用された型のすべてのメソッドに対して &apos;NotImplemented&apos; 動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.Fakes.ShimPgService.Behavior">
+            <summary>shim が適用された型のすべてのメソッドに対して動作を割り当てます</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.Fakes.ShimPgService.Constructor">
+            <summary>PgService.PgService(PgService this) の shim の設定</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.Fakes.ShimPgService.GetMovie">
+            <summary>PgService.GetMovie() の shim の設定</summary>
+        </member>
+        <member name="T:ConsoleAppTest.pg.Fakes.StubPgService">
+            <summary>ConsoleAppTest.pg.PgService のスタブ型</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.Fakes.StubPgService.#ctor">
+            <summary>新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.Fakes.StubPgService.CallBase">
+            <summary>フォールバック動作の代わりに基本メソッドを呼び出すかどうかを示す値を取得または設定します</summary>
+        </member>
+        <member name="M:ConsoleAppTest.pg.Fakes.StubPgService.InitializeStub">
+            <summary>type StubPgService の新しいインスタンスを初期化します</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.Fakes.StubPgService.InstanceBehavior">
+            <summary>インスタンスの動作を取得または設定します。</summary>
+        </member>
+        <member name="P:ConsoleAppTest.pg.Fakes.StubPgService.InstanceObserver">
             <summary>インスタンス オブザーバーを取得または設定します。</summary>
         </member>
         <member name="T:ConsoleAppTest.pg.model.Fakes.ShimApplicationDbContext">

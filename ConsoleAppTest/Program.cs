@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleAppTest.pg;
+using System;
 
 namespace ConsoleAppTest
 {
@@ -31,7 +32,7 @@ namespace ConsoleAppTest
                     Console.WriteLine(ByeBye());
                     break;
                 default:
-                    Console.WriteLine(Sql.GetMovie());
+                    Console.WriteLine(PgService.GetMovie());
                     break;
             }
 

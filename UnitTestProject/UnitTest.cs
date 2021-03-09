@@ -60,12 +60,13 @@ namespace UnitTestProject
             {
                 ConsoleAppTest.Fakes.ShimProgram.Hello = () =>
                 {
-                    return ShimsContext.ExecuteWithoutShims (() => {
+                    return ShimsContext.ExecuteWithoutShims(() =>
+                    {
                         return Program.Hello();
                     });
                 };
                 string actual = Program.Hello();
-                Assert.AreEqual(Program.res1, actual);
+                Assert.AreEqual(Program.res2, actual);
             }
         }
 
