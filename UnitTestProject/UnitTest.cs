@@ -6,6 +6,7 @@ using ConsoleApp.Migrations;
 using ConsoleApp.http;
 using ConsoleApp.scraping;
 using ConsoleApp.music;
+using ConsoleApp.form;
 using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -127,10 +128,19 @@ namespace UnitTestProject
         }
 
         /// <summary>
+        /// Forn ƒeƒXƒg
+        /// </summary>
+        [TestMethod]
+        public void TestMethod7()
+        {
+            FormService.ShowMessage("TestMethod7");
+        }
+
+        /// <summary>
         /// play music
         /// </summary>
         [TestMethod]
-        public void TestMethod7 ()
+        public void TestMethod99 ()
         {
   
             var sw = new System.Diagnostics.Stopwatch();

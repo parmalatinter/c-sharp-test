@@ -1,6 +1,5 @@
 ﻿using ConsoleApp.pg;
 using System;
-
 namespace ConsoleApp
 {
     public class Program
