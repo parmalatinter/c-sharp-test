@@ -3,9 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ConsoleApp;
 using ConsoleApp.pg.model;
 using ConsoleApp.Migrations;
+using ConsoleApp.http;
 using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace UnitTestProject
 {
@@ -89,6 +91,20 @@ namespace UnitTestProject
 
                 Console.WriteLine(context.Movie.Where(a => a.Name == "TEST").ToQueryString());
             }
+        }
+
+        /// <summary>
+        /// Http(Ajax)リクエスト取得テスト
+        /// </summary>
+        [TestMethod]
+        public void TestMethod5()
+        {
+            Task.Run(async () =>
+            {
+                string res = await HttpService.HttpAjaxPostAsync();
+                Assert.AreEqual("OK", res);
+            }).GetAwaiter().GetResult();
+  
         }
     }
 }
