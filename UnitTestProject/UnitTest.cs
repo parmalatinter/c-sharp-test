@@ -4,6 +4,7 @@ using ConsoleApp;
 using ConsoleApp.pg.model;
 using ConsoleApp.Migrations;
 using ConsoleApp.http;
+using ConsoleApp.scraping;
 using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -105,6 +106,22 @@ namespace UnitTestProject
                 Assert.AreEqual("OK", res);
             }).GetAwaiter().GetResult();
   
+        }
+
+        /// <summary>
+        /// スクレイピングテスト 株価取得
+        /// </summary>
+        [TestMethod]
+        public void TestMethod6()
+        {
+            // stock by Toyota 
+            string code = "7203.T";
+            Task.Run(async () =>
+            {
+                int res = await ScrapingService.GetFinancePriceAsync(code);
+                Console.WriteLine($"stock price : {res}");
+                Assert.IsTrue(res > 4000);
+            }).GetAwaiter().GetResult();
         }
     }
 }

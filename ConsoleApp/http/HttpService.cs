@@ -7,6 +7,10 @@ namespace ConsoleApp.http
 {
     public class HttpService
     {
+        /// <summary>
+        /// test server
+        /// git@github.com:parmalatinter/node-test-server.git :by heroku app
+        /// </summary>
         public const string url = "https://node-easy-test-server.herokuapp.com";
         public static async Task<string> HttpAjaxPostAsync()
         {
