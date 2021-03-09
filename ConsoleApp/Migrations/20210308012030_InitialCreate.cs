@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace ConsoleAppTest.Migrations
+namespace ConsoleApp.Migrations
 {
     /// <summary>
     /// https://www.aruse.net/entry/2018/09/12/145316

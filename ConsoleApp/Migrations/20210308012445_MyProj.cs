@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ConsoleAppTest.Migrations
+namespace ConsoleApp.Migrations
 {
     public partial class MyProj : Migration
     {

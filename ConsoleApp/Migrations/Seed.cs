@@ -1,7 +1,7 @@
-﻿using ConsoleAppTest.pg.model;
+﻿using ConsoleApp.pg.model;
 using System.Linq;
 
-namespace ConsoleAppTest.Migrations
+namespace ConsoleApp.Migrations
 {
     public class Seed 
     {

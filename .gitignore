@@ -5,6 +5,8 @@ UnitTestProject/FakesAssemblies/*.dll
 UnitTestProject/bin
 ConsoleAppTest/obj
 ConsoleAppTest/bin
+ConsoleApp/obj
+ConsoleApp/bin
 packages/
 TestResults/
 .vs/

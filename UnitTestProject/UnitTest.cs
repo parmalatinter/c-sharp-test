@@ -1,8 +1,8 @@
 using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ConsoleAppTest;
-using ConsoleAppTest.pg.model;
-using ConsoleAppTest.Migrations;
+using ConsoleApp;
+using ConsoleApp.pg.model;
+using ConsoleApp.Migrations;
 using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -41,7 +41,7 @@ namespace UnitTestProject
         {
             using (ShimsContext.Create())
             {
-                ConsoleAppTest.Fakes.ShimProgram.Hello = () =>
+                ConsoleApp.Fakes.ShimProgram.Hello = () =>
                 {
                     return "TEST";
                 };
@@ -58,7 +58,7 @@ namespace UnitTestProject
         {
             using (ShimsContext.Create())
             {
-                ConsoleAppTest.Fakes.ShimProgram.Hello = () =>
+                ConsoleApp.Fakes.ShimProgram.Hello = () =>
                 {
                     return ShimsContext.ExecuteWithoutShims(() =>
                     {

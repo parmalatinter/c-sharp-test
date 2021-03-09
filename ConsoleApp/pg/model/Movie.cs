@@ -2,7 +2,7 @@
 using System.Data.Entity.ModelConfiguration;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ConsoleAppTest.pg.model
+namespace ConsoleApp.pg.model
 {
     [Table("Movies")]
     public class Movie

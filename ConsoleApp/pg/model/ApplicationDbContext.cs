@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 
-namespace ConsoleAppTest.pg.model
+namespace ConsoleApp.pg.model
 {
     /// <summary>
     /// https://www.npgsql.org/efcore/

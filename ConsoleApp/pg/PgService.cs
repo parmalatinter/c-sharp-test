@@ -1,9 +1,9 @@
-﻿using ConsoleAppTest.pg.model;
+﻿using ConsoleApp.pg.model;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
-namespace ConsoleAppTest.pg
+namespace ConsoleApp.pg
 {
     /// <summary>
     /// Entity Frameworkを使ってPostgreSQLにアクセスする方法

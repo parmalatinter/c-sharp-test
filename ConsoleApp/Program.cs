@@ -1,7 +1,7 @@
-﻿using ConsoleAppTest.pg;
+﻿using ConsoleApp.pg;
 using System;
 
-namespace ConsoleAppTest
+namespace ConsoleApp
 {
     public class Program
     {
