@@ -1,4 +1,7 @@
 ﻿using ConsoleAppTest.pg.model;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
 
 namespace ConsoleAppTest
 {
@@ -8,18 +11,17 @@ namespace ConsoleAppTest
     /// </summary>
     public class Sql
     {
-        public const string res = "Hello World!";
 
-        public static void GetMovie()
+        public static string GetMovie()
         {
-            ApplicationDbContext applicationDbContext = new ApplicationDbContext();
-            var test = applicationDbContext.Movie;
+            using ApplicationDbContext context = new ApplicationDbContext();
+            // [出力]
+            foreach (var member in context.Movie)
+            {
+                return $"{member.Id}, {member.Name}";
+            }
 
-        }
-
-        public string ByeBye()
-        {
-            return res;
+            return "Null";
         }
     }
 }
