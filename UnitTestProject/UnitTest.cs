@@ -30,7 +30,7 @@ namespace UnitTestProject
         public void TestMethod1()
         {
             string actual = Program.Hello();
-            Assert.AreEqual(Program.res, actual);
+            Assert.AreEqual(Program.res1, actual);
         }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace UnitTestProject
                     });
                 };
                 string actual = Program.Hello();
-                Assert.AreEqual(Program.res, actual);
+                Assert.AreEqual(Program.res1, actual);
             }
         }
 
