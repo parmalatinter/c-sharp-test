@@ -62,11 +62,12 @@ namespace UnitTestProject
                 {
                     return ShimsContext.ExecuteWithoutShims(() =>
                     {
+                        Console.WriteLine("Overwride by shim");
                         return Program.Hello();
                     });
                 };
                 string actual = Program.Hello();
-                Assert.AreEqual(Program.res2, actual);
+                Assert.AreEqual(Program.res1, actual);
             }
         }
 
