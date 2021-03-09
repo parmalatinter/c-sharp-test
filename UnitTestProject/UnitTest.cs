@@ -10,6 +10,7 @@ using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace UnitTestProject
 {
@@ -131,7 +132,22 @@ namespace UnitTestProject
         [TestMethod]
         public void TestMethod7 ()
         {
+  
+            var sw = new System.Diagnostics.Stopwatch();
+
+            sw.Start();
+
+            // take about 30 sec over for play music
             MusicService.PlayMusic();
+
+            sw.Stop();
+
+            TimeSpan ts = sw.Elapsed;
+            Console.WriteLine($"{ts}");
+            string secStr = ts.ToString(@"ss");
+            int.TryParse(secStr, NumberStyles.AllowThousands, null, out int sec);
+            Assert.IsTrue(sec > 25);
+            
         }
     }
 }
