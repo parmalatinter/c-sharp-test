@@ -5,6 +5,7 @@ using ConsoleApp.pg.model;
 using ConsoleApp.Migrations;
 using ConsoleApp.http;
 using ConsoleApp.scraping;
+using ConsoleApp.music;
 using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -122,6 +123,15 @@ namespace UnitTestProject
                 Console.WriteLine($"stock price : {res}");
                 Assert.IsTrue(res > 4000);
             }).GetAwaiter().GetResult();
+        }
+
+        /// <summary>
+        /// play music
+        /// </summary>
+        [TestMethod]
+        public void TestMethod7 ()
+        {
+            MusicService.PlayMusic();
         }
     }
 }
