@@ -6,7 +6,8 @@ namespace ConsoleApp.form
     {
         public static void ShowMessage(string msg)
         {
-            MessageBox.Show(msg);
+            Form form = new Form(msg); 
+            form.ShowDialog();
         }
     }
 }
