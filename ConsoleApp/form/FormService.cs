@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace ConsoleApp.form
 {
@@ -12,8 +13,15 @@ namespace ConsoleApp.form
 
         public static void Capture()
         {
-            FormCapture form = new();
-            form.ShowDialog();
+            try
+            {
+                FormCapture form = new();
+                form.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error : {ex}");
+            }
         }
     }
 }

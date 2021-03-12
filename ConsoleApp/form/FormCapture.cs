@@ -70,22 +70,22 @@ namespace ConsoleApp.form
                 while (sec < 5)
                 {
                     sec = GetStopWatchSec();
-
                     capture.Read(frame);
-                    image = BitmapConverter.ToBitmap(frame);
-                    if (pictureBox.Image != null)
-                    {
-                        pictureBox.Image.Dispose();
-                    }
-                    pictureBox.Image = image;
+                    pictureBox.Image = BitmapConverter.ToBitmap(frame);
                 }
 
                 StopWatchStop();
 
-                Bitmap snapshot = new(pictureBox.Image);
+                Bitmap snapshot = new(BitmapConverter.ToBitmap(frame));
 
                 string resourcesPath = Path.Combine(Directory.GetCurrentDirectory(), "Resources");
                 string filePath = Path.Combine(resourcesPath, string.Format(@"{0}.png", "user"));
+
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                }
+
                 snapshot.Save(filePath, ImageFormat.Png);
             }
         }
