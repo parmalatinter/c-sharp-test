@@ -137,6 +137,15 @@ namespace UnitTestProject
         }
 
         /// <summary>
+        /// OpenCv ƒeƒXƒg 
+        /// </summary>
+        [TestMethod]
+        public void TestMethod8()
+        {
+            FormService.Capture();
+        }
+
+        /// <summary>
         /// play music
         /// </summary>
         [TestMethod]

@@ -5,5 +5,8 @@
     <Compile Update="form\Form.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="form\FormCapture.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

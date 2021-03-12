@@ -6,7 +6,13 @@ namespace ConsoleApp.form
     {
         public static void ShowMessage(string msg)
         {
-            Form form = new Form(msg); 
+            Form form = new(msg); 
+            form.ShowDialog();
+        }
+
+        public static void Capture()
+        {
+            FormCapture form = new();
             form.ShowDialog();
         }
     }
