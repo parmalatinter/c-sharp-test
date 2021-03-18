@@ -73,9 +73,9 @@ namespace UnitTestProject.Properties {
         /// <summary>
         ///   System.IO.MemoryStream に類似した型 System.IO.UnmanagedMemoryStream のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream music {
+        internal static System.IO.UnmanagedMemoryStream test {
             get {
-                return ResourceManager.GetStream("music", resourceCulture);
+                return ResourceManager.GetStream("test", resourceCulture);
             }
         }
     }

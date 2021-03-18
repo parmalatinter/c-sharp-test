@@ -78,5 +78,14 @@ namespace ConsoleApp.Properties {
                 return ResourceManager.GetStream("music", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   System.IO.MemoryStream に類似した型 System.IO.UnmanagedMemoryStream のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream test {
+            get {
+                return ResourceManager.GetStream("test", resourceCulture);
+            }
+        }
     }
 }

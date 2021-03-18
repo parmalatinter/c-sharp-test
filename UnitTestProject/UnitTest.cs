@@ -165,7 +165,7 @@ namespace UnitTestProject
             Console.WriteLine($"{ts}");
             string secStr = ts.ToString(@"ss");
             int.TryParse(secStr, NumberStyles.AllowThousands, null, out int sec);
-            Assert.IsTrue(sec > 25);
+            Assert.IsTrue(sec > 1);
             
         }
     }

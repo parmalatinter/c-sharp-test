@@ -16,7 +16,7 @@ namespace ConsoleApp.music
             SoundPlayer player = new SoundPlayer();
 
             string resourcesPath = Path.Combine(Directory.GetCurrentDirectory(), "Resources");
-            string filePath = Path.Combine(resourcesPath, "music.wav");
+            string filePath = Path.Combine(resourcesPath, "test.wav");
             player.SoundLocation = filePath;
 
             player.PlaySync();
